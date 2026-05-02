@@ -1,23 +1,7 @@
 import { Type } from "typebox";
 
 const GIT_CONVENTIONS = `
-## Git Commit Conventions
-When committing to git, include an Assisted-by trailer in the commit message following the Linux kernel convention:
-
-    Assisted-by: AGENT_NAME:MODEL_VERSION [TOOL1] [TOOL2]
-
-Where:
-- AGENT_NAME is "pi"
-- MODEL_VERSION is the model from the get_current_model tool
-- [TOOL1] [TOOL2] are optional specialized tools used (not basic tools like git, gcc, make, editors)
-
-Example commit message:
-    Fix null pointer in config parser
-    
-    Assisted-by: pi:claude-opus-4-6
-
-Always use get_current_model to determine the model. Never guess.
-Never commit or push without explicit user approval.
+Git commits require an Assisted-by trailer: "Assisted-by: pi:<model>" where <model> comes from get_current_model. Example: "Assisted-by: pi:claude-opus-4-6". Optional: append tool names (not basic tools).
 `;
 
 export default function (pi) {
