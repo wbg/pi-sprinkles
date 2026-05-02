@@ -20,7 +20,7 @@ Registers a tool so the LLM can query which model it's running as — instead of
 
 Injects lightweight conventions into the system prompt on every turn:
 
-- **Git Assisted-by trailer** — follows the [Linux kernel convention](https://docs.kernel.org/process/submitting-patches.html). Commits get an `Assisted-by: pi:<model>` trailer using the actual model from `get_current_model`.
+- **Git Assisted-by trailer** — follows the [Linux kernel convention](https://docs.kernel.org/process/coding-assistants.html). Commits get an `Assisted-by: pi:<model>` trailer using the actual model from `get_current_model`.
 
 ## License
 
